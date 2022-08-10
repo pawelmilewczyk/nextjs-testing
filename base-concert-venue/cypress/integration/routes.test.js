@@ -13,6 +13,6 @@ it("displays correct heading when navigating to bands route", () => {
 });
 
 it("displays correct band name for band route that existed at build time", () => {
-  cy.task("db:reset").visit("/bands/94379");
+  cy.task("db:reset").visit("/bands/1");
   cy.findByRole("heading", { name: /Shamrock Pete/i }).should("exist");
 });
